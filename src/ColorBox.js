@@ -5,6 +5,7 @@ class ColorBox extends Component {
   constructor(props) {
     super(props);
     this.state = { copied: false };
+    this.changeCopyState = this.changeCopyState.bind(this);
   }
   changeCopyState() {
     this.setState({ copied: true }, () => {
