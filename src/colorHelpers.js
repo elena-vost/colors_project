@@ -38,4 +38,21 @@
       for(let level of levels){
           newpalette.colors[level] = [];
       }
+      for(let color of starterPalette.colors){
+
+      }
+  }
+  function getRange(hexColor){
+      const end = "#fff";
+      return [
+          chroma(hexColor)
+          .darken(1.4)
+          .hex(),
+          hexColor,
+          end
+      ];
+  }
+color.darken(1.4) - color - white
+  function generateScale(hexColor, numberOfColors){
+      chroma.scale()
   }
