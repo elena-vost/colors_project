@@ -51,8 +51,7 @@
           hexColor,
           end
       ];
-  }
-color.darken(1.4) - color - white
+    }
   function generateScale(hexColor, numberOfColors){
-      chroma.scale()
+      chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors)
   }
