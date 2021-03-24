@@ -25,4 +25,5 @@
     ],
   }
 
-  import chroma from 'chroma-js'
+  import chroma from 'chroma-js';
+  const levels = [50,100,200,300,400,500,60,700,800,900];
