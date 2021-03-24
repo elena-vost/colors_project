@@ -34,5 +34,8 @@
           id: starterPalette.id,
           emoji: starterPalette.emoji,
           colors: {}
+      };
+      for(let level of levels){
+          newpalette.colors[level] = [];
       }
   }
