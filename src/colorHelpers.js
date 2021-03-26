@@ -39,7 +39,10 @@
           newpalette.colors[level] = [];
       }
       for(let color of starterPalette.colors){
-
+        let scale = getScale(color.color, 10).reverse();
+        for(let i in scale){
+            newPalette.colors[level[i]]
+        }
       }
   }
   function getRange(hexColor){
@@ -53,5 +56,8 @@
       ];
     }
   function generateScale(hexColor, numberOfColors){
-      return chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors)
+      return chroma
+      .scale(getRange(hexColor))
+      .mode("lab")
+      .colors(numberOfColors)
   }
