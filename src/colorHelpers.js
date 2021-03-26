@@ -53,5 +53,5 @@
       ];
     }
   function generateScale(hexColor, numberOfColors){
-      chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors)
+      return chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors)
   }
