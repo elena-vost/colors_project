@@ -10,9 +10,9 @@ export class Palette extends Component {
     this.state = { level: 500 };
   }
   render() {
-    const colorBoxes = this.props.palette.colors[500].map((color) => (
-      <ColorBox background={color.hex} name={color.name} />
-    ));
+    const colorBoxes = this.props.palette.colors[
+      this.state.level
+    ].map((color) => <ColorBox background={color.hex} name={color.name} />);
     return (
       <div className="Palette">
         <Slider />
