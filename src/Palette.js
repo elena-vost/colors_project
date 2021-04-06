@@ -5,6 +5,10 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 
 export class Palette extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { level: 500 };
+  }
   render() {
     const colorBoxes = this.props.palette.colors[500].map((color) => (
       <ColorBox background={color.hex} name={color.name} />
