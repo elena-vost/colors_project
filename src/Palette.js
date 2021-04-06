@@ -11,6 +11,7 @@ export class Palette extends Component {
     ));
     return (
       <div className="Palette">
+        <Slider />
         <div className="Palette-colors">{colorBoxes}</div>
       </div>
     );
