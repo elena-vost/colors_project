@@ -15,7 +15,7 @@ export class Palette extends Component {
     ].map((color) => <ColorBox background={color.hex} name={color.name} />);
     return (
       <div className="Palette">
-        <Slider />
+        <Slider defaultValue={this.state.level} />
         <div className="Palette-colors">{colorBoxes}</div>
       </div>
     );
