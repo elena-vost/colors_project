@@ -45,7 +45,10 @@ class Navbar extends Component {
             <MenuItem value="rgba">rgba - (255,255,255,1.0)</MenuItem>
           </Select>
         </div>
-        <Snackbar></Snackbar>
+        <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+          open={this.state.open}
+        ></Snackbar>
       </header>
     );
   }
